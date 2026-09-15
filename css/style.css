@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     place-items: center;
+    gap: 5px;
 }
 
 .container > div {
@@ -29,4 +30,14 @@
     cursor: pointer;
     border-color: gray;
     border-radius: 100%;
+}
+
+.button-ac {
+    background-color: orange;
+    color: black;
+    font-size: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-color: orange;
+    border-radius: 5px;
 }
