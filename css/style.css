@@ -16,3 +16,17 @@
 .double-column {
     grid-column: auto / span 2;
 }
+
+.button {
+    text-align: center;
+}
+
+.button-numeral {
+    background-color: gray;
+    color: white;
+    font-size: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-color: gray;
+    border-radius: 100%;
+}
