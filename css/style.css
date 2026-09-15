@@ -62,3 +62,26 @@
     border-radius: 5px;
 }
 
+.button-subtract {
+    background-color: red;
+    color: black;
+    font-size: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-color: red;
+    border-radius: 5px;
+}
+
+.button-add {
+    background-color: yellow;
+    color: black;
+    font-size: 20px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 12px;
+    padding-right: 12px;
+    cursor: pointer;
+    border-color: yellow;
+    border-radius: 5px;
+}
+
