@@ -41,3 +41,24 @@
     border-color: orange;
     border-radius: 5px;
 }
+
+.button-divide {
+    background-color: blue;
+    color: black;
+    font-size: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-color: blue;
+    border-radius: 5px;
+}
+
+.button-multiply {
+    background-color: pink;
+    color: black;
+    font-size: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-color: pink;
+    border-radius: 5px;
+}
+
