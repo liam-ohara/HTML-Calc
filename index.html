@@ -9,21 +9,21 @@
         <h1>HTML Calculator</h1>
         <div id="display"></div>
         <div class="container">
-            <div class="cell"><button class="button button-ac">AC</button></div>
+            <div class="cell"><button class="button button-ac" onclick="allClearPressed()">AC</button></div>
             <div class="cell"><button class="button button-divide">÷</button></div>
             <div class="cell"><button class="button button-multiply">x</button></div>
             <div class="cell"><button class="button button-subtract">-</button></div>
             <div class="cell"><button class="button button-numeral" onclick="sevenButtonPressed()">7</button></div>
             <div class="cell"><button class="button button-numeral" onclick="eightButtonPressed()">8</button></div>
             <div class="cell"><button class="button button-numeral" onclick="nineButtonPressed()">9</button></div>
-            <div class="double-row"><button class="button button-add">+</button></div>
+            <div class="double-row"><button class="button button-add" onclick="addButtonPressed()">+</button></div>
             <div class="cell"><button class="button button-numeral" onclick="fourButtonPressed()">4</button></div>
             <div class="cell"><button class="button button-numeral" onclick="fiveButtonPressed()">5</button></div>
             <div class="cell"><button class="button button-numeral" onclick="sixButtonPressed()">6</button></div>
             <div class="cell"><button class="button button-numeral" onclick="oneButtonPressed()">1</button></div>
             <div class="cell"><button class="button button-numeral" onclick="twoButtonPressed()">2</button></div>
             <div class="cell"><button class="button button-numeral" onclick="threeButtonPressed()">3</button></div>
-            <div class="double-row"><button class="button button-equals">=</button></div>
+            <div class="double-row"><button class="button button-equals" onclick="equalsButtonPressed()">=</button></div>
             <div class="double-column"><button class="button button-zero" onclick="zeroButtonPressed()">0</button></div>
             <div class="cell"><button class="button button-point">.</button></div>
         </div>
