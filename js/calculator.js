@@ -1,4 +1,7 @@
 let display = "";
+let previousInt = 0;
+let result = 0;
+let currentOperator = "";
 
 function zeroButtonPressed () {
     printDisplay("0");
@@ -38,6 +41,43 @@ function eightButtonPressed () {
 
 function nineButtonPressed () {
     printDisplay("9");
+}
+
+function allClearPressed () {
+    display = "";
+    previousInt = 0;
+    result = 0;
+    currentOperator = "";
+    printDisplay("");
+}
+
+function addButtonPressed(secondNumber) {
+    
+    currentOperator = "+";
+    
+    if (secondNumber != null) {
+        result = previousInt + secondNumber
+     
+    } else {
+        previousInt = Number(display);
+        printDisplay("+");
+    }
+
+}
+
+function equalsButtonPressed()
+
+{
+    switch (currentOperator) {
+        case "+": addButtonPressed(Number(display.slice(display.indexOf("+"),display.length)));
+        break;
+
+    }
+
+    previousInt = result;
+    display = result;
+    currentOperator = "";
+    printDisplay("");
 }
 
 function printDisplay (text) {
