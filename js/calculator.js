@@ -65,11 +65,27 @@ function addButtonPressed(secondNumber) {
 
 }
 
-function equalsButtonPressed()
+function subtractButtonPressed(secondNumber) {
 
-{
+    currentOperator = "-";
+
+     if (secondNumber != null) {
+        result = previousInt - secondNumber
+     
+    } else {
+        previousInt = Number(display);
+        printDisplay("-");
+    }
+}
+
+function equalsButtonPressed() {
+
+    secondNumber = Number(display.slice(display.indexOf(currentOperator)+1));
+
     switch (currentOperator) {
-        case "+": addButtonPressed(Number(display.slice(display.indexOf("+"),display.length)));
+        case "+": addButtonPressed(secondNumber);
+        break;
+        case "-": subtractButtonPressed(secondNumber);
         break;
 
     }
