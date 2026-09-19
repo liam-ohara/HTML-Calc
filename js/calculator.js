@@ -92,6 +92,22 @@ function multiplyButtonPressed(secondNumber) {
     }
 }
 
+function divideButtonPressed(secondNumber) {
+
+    currentOperator = "÷";
+
+    if (secondNumber != null && secondNumber == 0) {
+        result = "DIV0";
+
+    } else if (secondNumber != null && secondNumber != 0) {
+        result = previousInt / secondNumber;
+
+    } else {
+        previousInt = Number(display);
+        printDisplay("÷");
+    }
+}
+
 function equalsButtonPressed() {
 
     secondNumber = Number(display.slice(display.indexOf(currentOperator)+1));
@@ -102,6 +118,8 @@ function equalsButtonPressed() {
         case "-": subtractButtonPressed(secondNumber);
         break;
         case "x": multiplyButtonPressed(secondNumber);
+        break;
+        case "÷": divideButtonPressed(secondNumber);
 
     }
 
@@ -112,6 +130,12 @@ function equalsButtonPressed() {
 }
 
 function printDisplay (text) {
-    display = display + text;
+    
+    if (display == "DIV0") {
+        document.getElementById("display").textContent = display;
+
+    } else {
+        display = display + text;
     document.getElementById("display").textContent = display;
+    }
 }
