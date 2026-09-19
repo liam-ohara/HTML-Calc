@@ -51,6 +51,10 @@ function allClearPressed () {
     printDisplay("");
 }
 
+function decimalPointButtonPressed () {
+    printDisplay(".");
+}
+
 function addButtonPressed(secondNumber) {
     
     currentOperator = "+";
