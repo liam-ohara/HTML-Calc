@@ -56,7 +56,7 @@ function addButtonPressed(secondNumber) {
     currentOperator = "+";
     
     if (secondNumber != null) {
-        result = previousInt + secondNumber
+        result = previousInt + secondNumber;
      
     } else {
         previousInt = Number(display);
@@ -70,11 +70,25 @@ function subtractButtonPressed(secondNumber) {
     currentOperator = "-";
 
      if (secondNumber != null) {
-        result = previousInt - secondNumber
+        result = previousInt - secondNumber;
      
     } else {
         previousInt = Number(display);
         printDisplay("-");
+    }
+}
+
+function multiplyButtonPressed(secondNumber) {
+
+    currentOperator = "x"
+
+    if (secondNumber != null) {
+        result = previousInt * secondNumber;
+
+    } else {
+        previousInt = Number(display);
+        printDisplay("x");
+
     }
 }
 
@@ -87,6 +101,7 @@ function equalsButtonPressed() {
         break;
         case "-": subtractButtonPressed(secondNumber);
         break;
+        case "x": multiplyButtonPressed(secondNumber);
 
     }
 
