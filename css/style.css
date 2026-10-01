@@ -1,13 +1,16 @@
 .container {
     display: grid;
-    grid-template-columns: max-content max-content max-content max-content;
+    grid-template-columns: repeat(4, 1fr);
     place-items: center;
     gap: 5px;
+    max-width: 250px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
-.container > div {
+.cell {
     text-align: center;
-    align-items: center;
+    align-self: center;
 }
 
 .double-row {
@@ -123,5 +126,27 @@
     cursor: pointer;
     border-color: darkgray;
     border-radius: 5px;
+}
+
+p.calculator-display {
+    font-family: 'DSEG14ClassicRegular';
+    font-weight: normal;
+    font-size: 25px;
+    color: red;
+    word-wrap: break-word;
+}
+
+.container-calc-display {
+    display: grid;
+    grid-template-columns: minmax(0, 275px);
+    padding: 25px;
+}
+
+.container-calc-display > div {
+    background-color: black;
+    border: 1px solid black;
+    padding: 10px;
+    width: 100%;
+    text-overflow: clip;
 }
 

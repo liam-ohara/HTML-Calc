@@ -3,11 +3,14 @@
     <head>
         <title>HTML Calculator</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/dseg14" type="text/css"/>
         <script src="js/calculator.js"></script>
     </head>
     <body>
         <h1>HTML Calculator</h1>
-        <div id="display"></div>
+        <div class="container-calc-display">
+            <div class="container-calc-display"><p class="calculator-display" id="display"></p></div>
+        </div>
         <div class="container">
             <div class="cell"><button class="button button-ac" onclick="allClearPressed()">AC</button></div>
             <div class="cell"><button class="button button-divide" onclick="divideButtonPressed()">÷</button></div>
