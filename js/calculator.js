@@ -45,8 +45,8 @@ function nineButtonPressed () {
 
 function allClearPressed () {
     display = "";
-    previousInt = 0;
-    result = 0;
+    previousInt = null
+    result = null;
     currentOperator = "";
     printDisplay("");
 }
@@ -57,48 +57,59 @@ function decimalPointButtonPressed () {
 
 function addButtonPressed(secondNumber) {
     
-    currentOperator = "+";
-    
     if (secondNumber != null) {
         result = previousInt + secondNumber;
      
-    } else {
+    } else if (currentOperator.length == 0) {
         previousInt = Number(display);
         printDisplay("+");
+
+    } else {
+        return;
+
     }
+
+    currentOperator = "+";
 
 }
 
 function subtractButtonPressed(secondNumber) {
 
-    currentOperator = "-";
-
      if (secondNumber != null) {
         result = previousInt - secondNumber;
      
-    } else {
+    } else if (currentOperator.length == 0) {
         previousInt = Number(display);
         printDisplay("-");
+
+    } else {
+        return;
+
     }
+
+    currentOperator = "-";
+
 }
 
 function multiplyButtonPressed(secondNumber) {
 
-    currentOperator = "x"
-
     if (secondNumber != null) {
         result = previousInt * secondNumber;
 
-    } else {
+    } else if (currentOperator.length == 0) {
         previousInt = Number(display);
         printDisplay("x");
 
+    } else {
+        return;
+
     }
+
+    currentOperator = "x";
+
 }
 
 function divideButtonPressed(secondNumber) {
-
-    currentOperator = "÷";
 
     if (secondNumber != null && secondNumber == 0) {
         result = "DIV0";
@@ -106,10 +117,17 @@ function divideButtonPressed(secondNumber) {
     } else if (secondNumber != null && secondNumber != 0) {
         result = previousInt / secondNumber;
 
-    } else {
+    } else if (currentOperator.length == 0) {
         previousInt = Number(display);
         printDisplay("÷");
+
+    } else {
+        return;
+        
     }
+
+    currentOperator = "÷";
+
 }
 
 function equalsButtonPressed() {
