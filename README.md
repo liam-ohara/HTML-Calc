@@ -6,29 +6,29 @@ When the HTML file is opened, a graphic representation of a calculator is shown.
 
 ## Installation
 ### Prerequisites
-* Internet browser compatible with HTML 5.
-* JavaScript enabled.
+* Internet browser compatible with HTML 5
+* JavaScript enabled
 
 ### Installation
-1. Download all files from this repository.
-2. Move the downloaded files to another local directory of your choosing.
-3. Open `index.html` with your web browser.
+1. Download all files from this repository
+2. Move the downloaded files to another local directory of your choosing
+3. Open `index.html` with your web browser
 
 ## Features
 The webapp has the following features:
 
 >- Display line with a seven-segment font to represent digits and operators
 >- 11 buttons for digits and decimal point
->- 4 buttons for the arithmetic of addition, subtraction, multiplication and division
+>- 4 buttons for the arithmetic operations of addition, subtraction, multiplication and division
 >- Equals button to execute operations
->- All-clear button (`AC`) to clear display and all variables
+>- All-clear button (`AC`) to clear display and all variables in memory
 >- Single-operations only
 >- Ability to perform operations on a result
 
 ## Usage
 The calculator functions in the same way as a pocket calculator, but it is limited to a single operation at a time. You must enter the first integer followed by your desired operation, followed by the second integer. Then the equals button can be pressed to execute the operation. The result will then be displayed.
 
-You can continue performing operations on each result, with the result being the first integer of a new operation.
+You can continue performing operations on each result, with the result of the previous operation being the first integer of the next.
 
 The `AC` button should be pressed to start a new operation with an entirely new pair of integers.
 
